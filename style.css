@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+button {
+  color: white;
+  background-color: rgb(103, 56, 147);
+  transition: all 0.5s;
+}
+button:hover {
+  background-color: white;
+  color: rgb(103, 56, 147);
+  border-color: rgb(103, 56, 147);
+}
+.main-section {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  min-width: 30vw;
+  min-height: 5vh;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border-bottom: solid 2px rgb(103, 56, 147);
+  padding: 0.5rem;
+}
+
+nav ul li {
+  padding: 1rem;
+  color: rgb(103, 56, 147);
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.active {
+  padding: 1rem;
+  background-color: rgb(103, 56, 147);
+  color: white;
+}
+.search-input {
+  margin: 3rem 0rem;
+  outline: none;
+}
+.search-input,
+.search-btn,
+.more-btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 20px;
+}
+.main-title {
+  font-weight: lighter;
+  font-size: xxx-large;
+  margin-bottom: 2rem;
+  color: rgb(103, 56, 147);
+  font-family: "Monoton", cursive;
+}
+.main-title span {
+  padding: 0.3rem 1rem;
+  margin: 0rem 1rem;
+  color: white;
+  background-color: rgb(103, 56, 147);
+}
+.gallery-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+}
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+.more-btn {
+  display: block;
+  margin: 1rem auto;
+}
